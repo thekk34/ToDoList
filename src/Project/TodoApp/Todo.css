@@ -1,0 +1,168 @@
+:root {
+    --primary-bg: #f2f2f2; /* Light Grey */
+    --secondary-bg: #e0e0e0; /* Slightly darker grey for contrast */
+    --primary-color: black;
+    --accent-color: #f9e79f; /* Light yellow */
+    --btn-hover: #f7dc6f;
+    --check-color: #27ae60;
+    --delete-color: #e74c3c;
+    --shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  }
+  
+  /* Apply Light Grey to Entire Page */
+  body {
+    background-color: var(--primary-bg);
+    color: var(--primary-color);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .todo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 3%;
+    background: var(--primary-bg);
+    color: var(--primary-color);
+    transition: 0.3s ease-in-out;
+  }
+  
+  .header {
+    text-align: center;
+    font-size: 3rem;
+    padding: 2rem 0;
+  }
+  
+  section h1 {
+    font-size: 4.8rem;
+  }
+  
+  .date-time {
+    font-size: 2.4rem;
+  }
+  
+  form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
+  }
+  
+  form input {
+    padding: 12px;
+    font-size: 1.8rem;
+    border: none;
+    outline: none;
+    border-radius: 25px 0 0 25px;
+    width: 100%;
+    max-width: 500px;
+    background-color: black;
+    color: white;
+  }
+  
+  form input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  form button {
+    padding: 12px;
+    font-size: 1.8rem;
+    border: none;
+    cursor: pointer;
+    background-color: var(--accent-color);
+    color: black;
+    border-radius: 0 25px 25px 0;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: var(--btn-hover);
+  }
+  
+  .todo-list {
+    list-style: none;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+  }
+  
+  .todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    color: black;
+    padding: 1.2rem;
+    border-radius: 25px;
+    font-size: 1.8rem;
+    margin: 1rem 0;
+    box-shadow: var(--shadow);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .todo-item:hover {
+    transform: scale(1.02);
+  }
+  
+  .check-btn,
+  .delete-btn {
+    font-size: 2.5rem;
+    cursor: pointer;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    box-shadow: var(--shadow);
+    transition: 0.3s ease;
+  }
+  
+  .check-btn {
+    background-color: var(--check-color);
+    color: white;
+  }
+  
+  .delete-btn {
+    background-color: var(--delete-color);
+    color: white;
+  }
+  
+  .check-btn:hover {
+    background-color: #1e8449;
+  }
+  
+  .delete-btn:hover {
+    background-color: #922b21;
+  }
+  
+  /* ✅ Check Task Functionality */
+  .checkList {
+    text-decoration: line-through;
+    opacity: 0.6;
+  }
+  
+  .notCheckList {
+    text-decoration: none;
+    opacity: 1;
+  }
+  
+  /* Clear All Button */
+  .clear-btn {
+    background-color: var(--delete-color);
+    font-size: 1.6rem;
+    padding: 1rem 2.2rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    color: white;
+  }
+  
+  .clear-btn:hover {
+    background-color: #8d1407;
+  }
+  
+  

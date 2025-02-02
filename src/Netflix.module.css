@@ -1,0 +1,58 @@
+.card-heading{
+     margin-bottom: 3.2rem;
+}
+
+.card{
+     box-shadow:0px 6px 24px 0px,0px 0px 0px 1px;
+}
+
+.card-content{
+     padding: 3.2rem 1.2 rem;
+     display: flex;
+     flex-direction: column;
+     gap: 1.2rem;
+
+}
+
+img{
+     width: 100%;
+}
+
+.super_hit{
+     background-color:#7dcea0;
+}
+.average{
+     background-color:#f7dc6f;
+}
+
+.rating{
+     padding: 0.3rem 1.2rem;
+      
+     color: #000;
+     margin-left: 1.2rem;
+     border: #000;
+     -webkit-border-radius:100rem;
+     -moz-border-radius:100rem;
+     -ms-border-radius:100rem;
+     -o-border-radius:100rem;
+}
+
+.timepass{
+     border:0.35rem solid black;
+}
+
+/* 
+CSS Modules are essentially CSS files in which all class and animation names are scoped 
+locally by default. This means that the styles defined in a CSS Module only apply to the
+component that imports them, preventing any conflicts with other styles in your application. */
+
+/* why use css modules in react  */
+/* Encapsulation: Styles defined in a CSS Module are scoped to the component. This prevents naming collisions and makes it easier to manage styles as your application grows.
+
+Ease of Maintenance: Since styles are localized, you can change styles for a specific component without worrying about affecting other components.
+
+Dynamic Styling: CSS Modules can incorporate dynamic styling using JavaScript, facilitating the implementation of conditional styles based on props or component state.
+
+Better Readability: By organizing styles in separate files tied to components, the code becomes easier to read and understand, promoting a better developer experience.
+
+Reduced Global Namespace Pollution: With CSS Modules, you’re less likely to accidentally overwrite styles, reducing bugs and side effects related to CSS. */
